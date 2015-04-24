@@ -1,11 +1,13 @@
 # AIRKinectv2 ANE v1.0.1 (short: KV2) - Readme
 
-			- what is it? -
+---
+
+**- what is it? -**
 			
 The AIRKinectv2 ANE is a wrapper for Microsoft's body tracking SDK "Kinect v2 for Windows".
 It is an Adobe AIR native extension (ANE) for Windows 8 and 8.1.
 
-			- ready to try! - 
+**- ready to try! -**
 
 You can try this ANE free of charge to evaluate if it fits your needs!
 If you choose to use our software commercially, just contact us via:
@@ -15,14 +17,16 @@ http://www.tastenkunst.com/#/contact
 Read the EULA carefully before using the SDKs. Once you decide to use KV2 commercially, 
 you will get a seperate license agreement, that you need to agree to.
 
-			- visit us online - 
+**- visit us online -**
 
 + Facebook: 				https://www.facebook.com/BeyondRealityFace
 + Twitter:	 				https://twitter.com/tastenkunst
 + website:					http://www.tastenkunst.com
 + blog:						http://blog.tastenkunst.com
 
-			- getting started - 
+---
+
+**- getting started -**
 
 Microsoft provides an excellent overview of the Kinect v2 SDK on their site:
 http://kinectforwindows.org
@@ -30,19 +34,19 @@ http://kinectforwindows.org
 For important information on technical specifications and hardware requirements please visit:
 http://www.microsoft.com/en-us/kinectforwindows/purchase/sensor_setup.aspx
 
-From their site download the official SDK v2.0.1410.19000 (10/21/2014), install it
+From their site download the official SDK **v2.0.1410.19000** (10/21/2014), install it
 on your 64bit Windows 8.1 power horse and attach the Kinect to your USB3 controller.
 
-Open the app "SDK Browser v2 (Kinect for Windows)" and run the first entry: 
+Open the app **"SDK Browser v2 (Kinect for Windows)"** and run the first entry: 
 "Kinect Configuration Verifier".
 
 If you pass all the tests and see the images (color and depth) at
 the very end of that app, you have installed the Kinect and the SDK properly.
 
 In the bin folder of this ANE package you will find two files and a folder:
-+ Kinect20.VisualGestureBuilder.dll
-+ Microsoft.Kinect.VisualGestureBuilder.dll
-+ vgbtechs
+* Kinect20.VisualGestureBuilder.dll
+* Microsoft.Kinect.VisualGestureBuilder.dll
+* vgbtechs
 
 You need to package those file into your AIR App-Installer and thus deliver those
 files via the installer. 
@@ -60,28 +64,31 @@ KV2ExampleAll, which includes all the stuff you are looking for.
 
 You will find the API reference in the /docs/ folder.
 			
-			- Actionscript -
+---
+
+**- Actionscript -**
 
 We develop using FDT (http://www.fdt.powerflasher.com), so this package is a FDT-project, 
 that can easily be imported into your FDT. Use the launcher in /launch/ folder to start the examples.
 
 For all other coding IDEs (e.g. Flash Builder, FlashDevelop, Intellij) the classpath settings
 are as follows:
-+ /src/						- the example source code 
-+ /lib/						- the SWC lib folder, add all included SWCs to your classpath
-+ /ane/						- the ANE lib folder, add all included ANEs to your classpath
+* /src/						- the example source code 
+* /lib/						- the SWC lib folder, add all included SWCs to your classpath
+* /ane/						- the ANE lib folder, add all included ANEs to your classpath
 
 What examples are included:
-+ App						- Choose one of the following examples in that App class.
-							  It is also the document class for the FLA in /bin/ (tested in Flash CC 2014.2)
-+ KV2ExampleColorFrame		- Shows how to setup a KV2Example.
-+ KV2ExampleDepthFrame		- Shows how to use KV2Config to get the wanted results.
-+ KV2ExampleAll				- Let's you try all the things, that can be done with the ANE.
-+ KV2ExampleWaterRipple		- A water effect example, that can be controlled using your hands.
+* App						- Choose one of the following examples in that App class. It is also the document class for the FLA in /bin/ (tested in Flash CC 2014.2)
+* KV2ExampleColorFrame		- Shows how to setup a KV2Example.
+* KV2ExampleDepthFrame		- Shows how to use KV2Config to get the wanted results.
+* KV2ExampleAll				- Let's you try all the things, that can be done with the ANE.
+* KV2ExampleWaterRipple		- A water effect example, that can be controlled using your hands.
 
-			- release notes -
+---
+
+**- release notes -**
 			
-v1.0.1 - 23.04.2015:
+**v1.0.1 - 23.04.2015:**
 
 Release! We used this ANE in a couple of projects since we started developing it.
 It is stable thanks to the great work Microsoft put into their SDK. This is the first
@@ -105,13 +112,11 @@ This is a restriction in the current Microsoft SDK. The Kinect really eats up th
 USB bandwidth, you will see that, if you enable all the image data options at once.
 
 What's on our todo list:
-+ We already implemented the VisualGestureBuilder functionality, but deactivated it
-  in the current build, because it needs further testing. Basically this is about
-  tracking/detecting trained gestures (GBD/GBA files).
-+ Performance optimizations.
-+ More examples for you.
+* We already implemented the VisualGestureBuilder functionality, but deactivated it in the current build, because it needs further testing. Basically this is about tracking/detecting trained gestures (GBD/GBA files).
+* Performance optimizations.
+* More examples for you.
 
 We hope you like this release and build cool stuff with it.
 Happy coding!
 
-The Tastenkunst Team.
+**The Tastenkunst Team.**
