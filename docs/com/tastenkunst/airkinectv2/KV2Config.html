@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../override.css" type="text/css"><meta name="keywords" content="KV2Config,com.tastenkunst.airkinectv2.KV2Config,BODY_COUNT,CONTEXT_UNAVAILABLE,FAIL,HandState_Closed,HandState_Lasso,HandState_NotTracked,HandState_Open,HandState_Unknown,JointType_AnkleLeft,JointType_AnkleRight,JointType_Count,JointType_ElbowLeft,JointType_ElbowRight,JointType_FootLeft,JointType_FootRight,JointType_HandLeft,JointType_HandRight,JointType_HandTipLeft,JointType_HandTipRight,JointType_Head,JointType_HipLeft,JointType_HipRight,JointType_KneeLeft,JointType_KneeRight,JointType_Neck,JointType_ShoulderLeft,JointType_ShoulderRight,JointType_SpineBase,JointType_SpineMid,JointType_SpineShoulder,JointType_ThumbLeft,JointType_ThumbRight,JointType_WristLeft,JointType_WristRight,LICENCE,OK,TrackingConfidence_High,TrackingConfidence_Low,TrackingState_Inferred,TrackingState_NotTracked,TrackingState_Tracked,VERSION,bodies,bodyIndexFrameBmd,bodyIndexFrameColors,bodyIndexFrameMappedToColorSpaceBmd,bodyIndexFrameMappingToColorSpaceUpdated,bodyIndexFrameUpdated,cameraSpacePoint,color,colorFrameBmd,colorFrameMappedToDepthSpaceBmd,colorFrameMappingToDepthSpaceUpdated,colorFrameUpdated,colorSpaceDimensions,colorSpacePoint,depthFrameBmd,depthFrameMappedToColorSpaceBmd,depthFrameMappingToColorSpaceUpdated,depthFrameUpdated,depthSpaceDimensions,depthSpacePoint,enableBodyFrame,enableBodyIndexFrame,enableBodyIndexFrameMappingToColorSpace,enableColorFrame,enableColorFrameMappingToDepthSpace,enableDepthFrame,enableDepthFrameMappingToColorSpace,enableInfraredFrame,enableInfraredFrameMappingToColorSpace,enableLongExposureInfraredFrame,enableLongExposureInfraredFrameMappingToColorSpace,enableVisualGestureBuilderFrame,gestureConfidence,gestureProgress,gestureTracked,handLeftConfidence,handLeftState,handRightConfidence,handRightState,infraredFrameBmd,infraredFrameMappedToColorSpaceBmd,infraredFrameMappingToColorSpaceUpdated,infraredFrameUpdated,jointType,joints,longExposureInfraredFrameBmd,longExposureInfraredFrameMappedToColorSpaceBmd,longExposureInfraredFrameMappingToColorSpaceUpdated,longExposureInfraredFrameUpdated,tracked,trackingState"><title>com.tastenkunst.airkinectv2.KV2Config</title></head><body><script language="javascript" type="text/javascript" src="../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'KV2Config - AIRKinectv2 ANE v1.0.1';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">AIRKinectv2 ANE v1.0.1</td><td class="titleTableTopNav" align="right"><a href="../../../package-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../class-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../all-index-A.html" onclick="loadClassListFrame('../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../index.html?com/tastenkunst/airkinectv2/KV2Config.html&amp;com/tastenkunst/airkinectv2/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">KV2Config</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("KV2Config"); titleBar_setSubNav(false,true,false,false,false,false,false,false,false,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.tastenkunst.airkinectv2</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  KV2Config</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">KV2Config  <img src="../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> Object</td></tr></table><p></p><p></p><p></p>
+	              <p>Use the KV2Config class to set the data streams you want to 
+	 retrieve. Every option you add will lower the overall performance
+	 of your app. Everytime you change a setting in this config, you
+	 will need to use KV2Manager.start to restart the Kinect sensor.</p>
+	 
+	              <p>There are 3 "coordinate spaces":</p>
+	              <ul>
+	                 <li>ColorSpace: 1920x1080 pixels</li>
+	                 <li>DepthSpace: 512x424 pixels</li>
+	                 <li>CameraSpace: in meter (body joints)</li>
+	              </ul>
+	 
+	              <p>The different Kinect data readers have a certain
+	 source coordinate space, but can be mapped to other spaces, if needed.
+	 Some will be used regulary, like BodyIndexFrame to ColorSpace, but some
+	 might not be used at all (eg. LongExposureInfraredFrame to ColorSpace or ColorFrame to DepthSpace)</p>
+	 
+	              <ul>
+	                 <li>ColorFrame: ColorSpace, can be mapped to DepthSpace</li>
+	                 <li>DepthFrame: DepthSpace, can be mapped to ColorSpace</li>
+	                 <li>InfraredFrame: DepthSpace, can be mapped to ColorSpace</li>
+	                 <li>LongExposureInfraredFrame: DepthSpace, can be mapped to ColorSpace</li>
+	                 <li>BodyIndexFrame: DepthSpace, can be mapped to ColorSpace</li>
+	                 <li>BodyFrame (joints): CameraSpace, can be mapped to ColorSpace and DepthSpace</li>
+	              </ul>
+	 
+	           <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#bodyIndexFrameColors" class="signatureLink">bodyIndexFrameColors</a> : Vector.&lt;uint&gt; = null<div class="summaryTableDescription">
+		 The BodyIndexFrame returns a colored pixel mask for each body index.</div></td><td class="summaryTableOwnerCol">KV2Config</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#enableBodyFrame" class="signatureLink">enableBodyFrame</a> : Boolean = false<div class="summaryTableDescription">
+		 This will enable the tracking of the BodyFrame (skeleton/joints).</div></td><td class="summaryTableOwnerCol">KV2Config</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#enableBodyIndexFrame" class="signatureLink">enableBodyIndexFrame</a> : Boolean = false<div class="summaryTableDescription">
+		 This will enable the BodyIndexFrameReader of the Kinect sensor.</div></td><td class="summaryTableOwnerCol">KV2Config</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#enableBodyIndexFrameMappingToColorSpace" class="signatureLink">enableBodyIndexFrameMappingToColorSpace</a> : Boolean = false<div class="summaryTableDescription">
+		 This will enable the mapping of the BodyIndexFrame to the ColorSpace.</div></td><td class="summaryTableOwnerCol">KV2Config</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#enableColorFrame" class="signatureLink">enableColorFrame</a> : Boolean = false<div class="summaryTableDescription">
+		 This will enable the ColorFrameReader of the Kinect sensor.</div></td><td class="summaryTableOwnerCol">KV2Config</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#enableColorFrameMappingToDepthSpace" class="signatureLink">enableColorFrameMappingToDepthSpace</a> : Boolean = false<div class="summaryTableDescription">
+		 This will enable the mapping of the ColorFrame to the DepthSpace.</div></td><td class="summaryTableOwnerCol">KV2Config</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#enableDepthFrame" class="signatureLink">enableDepthFrame</a> : Boolean = false<div class="summaryTableDescription">
+		 This will enable the DepthFrameReader of the Kinect sensor.</div></td><td class="summaryTableOwnerCol">KV2Config</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#enableDepthFrameMappingToColorSpace" class="signatureLink">enableDepthFrameMappingToColorSpace</a> : Boolean = false<div class="summaryTableDescription">
+		 This will enable the mapping of the DepthFrame to the ColorSpace.</div></td><td class="summaryTableOwnerCol">KV2Config</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#enableInfraredFrame" class="signatureLink">enableInfraredFrame</a> : Boolean = false<div class="summaryTableDescription">
+		 This will enable the InfraredFrameReader of the Kinect sensor.</div></td><td class="summaryTableOwnerCol">KV2Config</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#enableInfraredFrameMappingToColorSpace" class="signatureLink">enableInfraredFrameMappingToColorSpace</a> : Boolean = false<div class="summaryTableDescription">
+		 This will enable the mapping of the InfraredFrame to the ColorSpace.</div></td><td class="summaryTableOwnerCol">KV2Config</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#enableLongExposureInfraredFrame" class="signatureLink">enableLongExposureInfraredFrame</a> : Boolean = false<div class="summaryTableDescription">
+		 This will enable the LongExposureInfraredFrameReader of the Kinect sensor.</div></td><td class="summaryTableOwnerCol">KV2Config</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#enableLongExposureInfraredFrameMappingToColorSpace" class="signatureLink">enableLongExposureInfraredFrameMappingToColorSpace</a> : Boolean = false<div class="summaryTableDescription">
+		 This will enable the mapping of the LongExposureInfraredFrame to the ColorSpace.</div></td><td class="summaryTableOwnerCol">KV2Config</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#enableVisualGestureBuilderFrame" class="signatureLink">enableVisualGestureBuilderFrame</a> : Boolean = false<div class="summaryTableDescription">
+		 This will enable the tracking of gestures (GBD/GBA files).</div></td><td class="summaryTableOwnerCol">KV2Config</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="bodyIndexFrameColors"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">bodyIndexFrameColors</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>public var bodyIndexFrameColors:Vector.&lt;uint&gt; = null</code><p></p><p></p><p>
+		 <p>The BodyIndexFrame returns a colored pixel mask for each body index.
+		 You can specify the colors by changing the default colors in this
+		 Vector.</p>
+		 
+		 <p>The default colors are:</p>
+		 <ul>
+		 <li>0xffff0000</li>
+		 <li>0xff00ff00</li>
+		 <li>0xff40ffff</li>
+		 <li>0xffffff40</li>
+		 <li>0xffff40ff</li>
+		 <li>0xff8080ff</li>
+		 </ul>
+		 
+		 <p>The Kinect SDK uses a diffrent color space than AS3. 
+		 The ANE will automatically take care of transforming the colors,
+		 so use the AS3 ARGB.</p>
+		 </p></div><a name="propertyDetail"></a><a name="enableBodyFrame"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">enableBodyFrame</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var enableBodyFrame:Boolean = false</code><p></p><p></p><p>
+		 This will enable the tracking of the BodyFrame (skeleton/joints).
+		 </p></div><a name="propertyDetail"></a><a name="enableBodyIndexFrame"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">enableBodyIndexFrame</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var enableBodyIndexFrame:Boolean = false</code><p></p><p></p><p>
+		 This will enable the BodyIndexFrameReader of the Kinect sensor.
+		 The BodyIndexFrame is a "mask" of pixels in the color of the body, 
+		 that is tracked.
+		 </p></div><a name="propertyDetail"></a><a name="enableBodyIndexFrameMappingToColorSpace"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">enableBodyIndexFrameMappingToColorSpace</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var enableBodyIndexFrameMappingToColorSpace:Boolean = false</code><p></p><p></p><p>
+		 This will enable the mapping of the BodyIndexFrame to the ColorSpace.
+		 </p></div><a name="propertyDetail"></a><a name="enableColorFrame"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">enableColorFrame</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var enableColorFrame:Boolean = false</code><p></p><p></p><p>
+		 This will enable the ColorFrameReader of the Kinect sensor.
+		 The ColorFrame is the HD colored camera image. 
+		 </p></div><a name="propertyDetail"></a><a name="enableColorFrameMappingToDepthSpace"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">enableColorFrameMappingToDepthSpace</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var enableColorFrameMappingToDepthSpace:Boolean = false</code><p></p><p></p><p>
+		 This will enable the mapping of the ColorFrame to the DepthSpace.
+		 </p></div><a name="propertyDetail"></a><a name="enableDepthFrame"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">enableDepthFrame</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var enableDepthFrame:Boolean = false</code><p></p><p></p><p>
+		 This will enable the DepthFrameReader of the Kinect sensor.
+		 The DepthFrame is the image visualizing the tracked depth data.
+		 </p></div><a name="propertyDetail"></a><a name="enableDepthFrameMappingToColorSpace"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">enableDepthFrameMappingToColorSpace</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var enableDepthFrameMappingToColorSpace:Boolean = false</code><p></p><p></p><p>
+		 This will enable the mapping of the DepthFrame to the ColorSpace.
+		 </p></div><a name="propertyDetail"></a><a name="enableInfraredFrame"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">enableInfraredFrame</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var enableInfraredFrame:Boolean = false</code><p></p><p></p><p>
+		 This will enable the InfraredFrameReader of the Kinect sensor.
+		 The InfraredFrame is the image visualizing the tracked infrared data.
+		 </p></div><a name="propertyDetail"></a><a name="enableInfraredFrameMappingToColorSpace"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">enableInfraredFrameMappingToColorSpace</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var enableInfraredFrameMappingToColorSpace:Boolean = false</code><p></p><p></p><p>
+		 This will enable the mapping of the InfraredFrame to the ColorSpace.
+		 </p></div><a name="propertyDetail"></a><a name="enableLongExposureInfraredFrame"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">enableLongExposureInfraredFrame</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var enableLongExposureInfraredFrame:Boolean = false</code><p></p><p></p><p>
+		 This will enable the LongExposureInfraredFrameReader of the Kinect sensor.
+		 The LongExposureInfraredFrame is the image visualizing the tracked long exposure infrared data.
+		 </p></div><a name="propertyDetail"></a><a name="enableLongExposureInfraredFrameMappingToColorSpace"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">enableLongExposureInfraredFrameMappingToColorSpace</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var enableLongExposureInfraredFrameMappingToColorSpace:Boolean = false</code><p></p><p></p><p>
+		 This will enable the mapping of the LongExposureInfraredFrame to the ColorSpace.
+		 </p></div><a name="propertyDetail"></a><a name="enableVisualGestureBuilderFrame"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">enableVisualGestureBuilderFrame</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var enableVisualGestureBuilderFrame:Boolean = false</code><p></p><p></p><p>
+		 This will enable the tracking of gestures (GBD/GBA files).
+		 Not active at the moment, further testing needed.
+		 </p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>AIRKinectv2 ANE v1.0.1 by Tastenkunst GmbH - www.tastenkunst.com - 2015</footer><br/>Freitag Apr 24 2015, 08:17 AM +02:00  </center></div></body></html><!--AIRKinectv2 ANE v1.0.1 by Tastenkunst GmbH - www.tastenkunst.com - 2015<br/>Freitag Apr 24 2015, 08:17 AM +02:00  -->

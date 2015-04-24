@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="CLEAN_TMP" default="remove.files" basedir="../">
+	<!-- 
+		FDT handles the extraction of ANEs quitly by generation a tmp folder.
+		This script will delete that folder to have the ANE extracted every
+		time the launcher is executed. 
+	-->
+	<target name="set.properties">
+		<property name="dir.project" value="${basedir}"/>
+		<property name="dir.project.bin" value="${basedir}/bin"/>
+	</target>	
+	<target name="remove.files" description="Removes tmp folder from bin" depends="set.properties">
+		<echo message="Remove tmp dir ... "/>
+		<delete dir="${dir.project.bin}/tmp"/>
+	</target>
+
+</project>

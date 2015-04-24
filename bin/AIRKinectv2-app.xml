@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<application xmlns="http://ns.adobe.com/air/application/17.0">
+  <id>com.tastenkunst.airkinectv2.examples.App</id>
+  <filename>AIRKinectv2_App</filename>
+  <name>AIRKinectv2 Example App</name>
+  <versionNumber>1.0.1</versionNumber>
+  <initialWindow>
+    <content>AIRKinectv2_App.swf</content>
+    <title>AIRKinectv2 Example App</title>
+    <aspectRatio>landscape</aspectRatio>
+    <fullScreen>false</fullScreen>
+    <autoOrients>false</autoOrients>
+    <visible>true</visible>
+    <renderMode>gpu</renderMode>
+  </initialWindow>
+  <supportedProfiles>desktop extendedDesktop</supportedProfiles>
+  <extensions>
+    <extensionID>com.tastenkunst.airkinectv2</extensionID>
+  </extensions>
+</application>

@@ -1,4 +1,4 @@
-# AIRKinectv2 ANE v1.0.1 (short: KV2) - Readme
+# AIRKinectv2 ANE v1.0.1 (short: KV2)
 
 ---
 
@@ -14,7 +14,7 @@ If you choose to use our software commercially, just contact us via:
 
 http://www.tastenkunst.com/#/contact
 
-Read the EULA carefully before using the SDKs. Once you decide to use KV2 commercially, 
+Read the EULA carefully before using this ANE. Once you decide to use KV2 commercially, 
 you will get a seperate license agreement, that you need to agree to.
 
 **- visit us online -**
@@ -51,8 +51,9 @@ In the bin folder of this ANE package you will find two files and a folder:
 You need to package those file into your AIR App-Installer and thus deliver those
 files via the installer. 
 
-!!! You will also need to put those 3 elements into PATH_TO_AIR_SDK_17_0_0/bin/
-Otherwise you won't be about to debug/try your app using adl.exe. !!!
+**You will also need to put those 3 elements into PATH_TO_AIR_SDK_17_0_0/bin/ .**
+Otherwise you won't be about to debug/try your app using adl.exe.
+
 If you try to run the examples and ask yourself, why it isn't working, it is 
 most likely the missing files in that damn PATH_TO_AIR_SDK_17_0_0/bin folder
 (hours wasted so far, after switching to a new AIR SDK version: at least 2).
@@ -77,7 +78,7 @@ are as follows:
 * /lib/						- the SWC lib folder, add all included SWCs to your classpath
 * /ane/						- the ANE lib folder, add all included ANEs to your classpath
 
-What examples are included:
+Examples are included:
 * App						- Choose one of the following examples in that App class. It is also the document class for the FLA in /bin/ (tested in Flash CC 2014.2)
 * KV2ExampleColorFrame		- Shows how to setup a KV2Example.
 * KV2ExampleDepthFrame		- Shows how to use KV2Config to get the wanted results.

@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../override.css" type="text/css"><meta name="keywords" content="KV2Body,com.tastenkunst.airkinectv2.KV2Body,BODY_COUNT,CONTEXT_UNAVAILABLE,FAIL,HandState_Closed,HandState_Lasso,HandState_NotTracked,HandState_Open,HandState_Unknown,JointType_AnkleLeft,JointType_AnkleRight,JointType_Count,JointType_ElbowLeft,JointType_ElbowRight,JointType_FootLeft,JointType_FootRight,JointType_HandLeft,JointType_HandRight,JointType_HandTipLeft,JointType_HandTipRight,JointType_Head,JointType_HipLeft,JointType_HipRight,JointType_KneeLeft,JointType_KneeRight,JointType_Neck,JointType_ShoulderLeft,JointType_ShoulderRight,JointType_SpineBase,JointType_SpineMid,JointType_SpineShoulder,JointType_ThumbLeft,JointType_ThumbRight,JointType_WristLeft,JointType_WristRight,LICENCE,OK,TrackingConfidence_High,TrackingConfidence_Low,TrackingState_Inferred,TrackingState_NotTracked,TrackingState_Tracked,VERSION,bodies,bodyIndexFrameBmd,bodyIndexFrameColors,bodyIndexFrameMappedToColorSpaceBmd,bodyIndexFrameMappingToColorSpaceUpdated,bodyIndexFrameUpdated,cameraSpacePoint,color,colorFrameBmd,colorFrameMappedToDepthSpaceBmd,colorFrameMappingToDepthSpaceUpdated,colorFrameUpdated,colorSpaceDimensions,colorSpacePoint,depthFrameBmd,depthFrameMappedToColorSpaceBmd,depthFrameMappingToColorSpaceUpdated,depthFrameUpdated,depthSpaceDimensions,depthSpacePoint,enableBodyFrame,enableBodyIndexFrame,enableBodyIndexFrameMappingToColorSpace,enableColorFrame,enableColorFrameMappingToDepthSpace,enableDepthFrame,enableDepthFrameMappingToColorSpace,enableInfraredFrame,enableInfraredFrameMappingToColorSpace,enableLongExposureInfraredFrame,enableLongExposureInfraredFrameMappingToColorSpace,enableVisualGestureBuilderFrame,gestureConfidence,gestureProgress,gestureTracked,handLeftConfidence,handLeftState,handRightConfidence,handRightState,infraredFrameBmd,infraredFrameMappedToColorSpaceBmd,infraredFrameMappingToColorSpaceUpdated,infraredFrameUpdated,jointType,joints,longExposureInfraredFrameBmd,longExposureInfraredFrameMappedToColorSpaceBmd,longExposureInfraredFrameMappingToColorSpaceUpdated,longExposureInfraredFrameUpdated,tracked,trackingState"><title>com.tastenkunst.airkinectv2.KV2Body</title></head><body><script language="javascript" type="text/javascript" src="../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'KV2Body - AIRKinectv2 ANE v1.0.1';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">AIRKinectv2 ANE v1.0.1</td><td class="titleTableTopNav" align="right"><a href="../../../package-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../class-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../all-index-A.html" onclick="loadClassListFrame('../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../index.html?com/tastenkunst/airkinectv2/KV2Body.html&amp;com/tastenkunst/airkinectv2/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">KV2Body</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#constantSummary">Constants</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("KV2Body"); titleBar_setSubNav(true,true,false,false,false,false,false,false,false,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.tastenkunst.airkinectv2</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  KV2Body</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">KV2Body  <img src="../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> Object</td></tr></table><p></p><p></p><p></p>
+	              <p>The Kinect is capable of tracking up to 6 bodies in parallel (BODY_COUNT).</p>
+	              <p>Every KV2Body object consists of 25 joints, hand states and a color.</p>
+	              <p>It will also return whether a certain trained gesture was tracked (GBD/GBA files).</p> 
+	              <p>(VisualGestureBuilder libraries are not activated in this build, since further testing is needed.)</p>
+	 
+	           <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#color" class="signatureLink">color</a> : uint<div class="summaryTableDescription">
+		 This is the color of a certain body index.
+		 
+		 The default values are:
+		 
+		 
+		 0xFF00FF00
+		 0xFFFF0000
+		 0xFFFF4000
+		 0x40FFFF00
+		 0xFF40FF00
+		 0xFF808000
+		 
+		 </div></td><td class="summaryTableOwnerCol">KV2Body</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#gestureConfidence" class="signatureLink">gestureConfidence</a> : Number<div class="summaryTableDescription">
+		 If a GestureType_Discrete was tracked this values will tell
+		 you, with which confidence it was tracked.</div></td><td class="summaryTableOwnerCol">KV2Body</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#gestureProgress" class="signatureLink">gestureProgress</a> : Number<div class="summaryTableDescription">
+		 If a GestureType_Continuous was tracked this value will be
+		 between 0.0 and 1.0.</div></td><td class="summaryTableOwnerCol">KV2Body</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#gestureTracked" class="signatureLink">gestureTracked</a> : Boolean<div class="summaryTableDescription">
+		 If a gesture database was added (GBD/GBA file), this
+		 values will state, whether a wanted gesture was tracked
+		 or not.</div></td><td class="summaryTableOwnerCol">KV2Body</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#handLeftConfidence" class="signatureLink">handLeftConfidence</a> : int<div class="summaryTableDescription">
+		 This is the tracking confidence of the state of the left hand.</div></td><td class="summaryTableOwnerCol">KV2Body</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#handLeftState" class="signatureLink">handLeftState</a> : int<div class="summaryTableDescription">
+		 This is the tracked state of the left hand.</div></td><td class="summaryTableOwnerCol">KV2Body</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#handRightConfidence" class="signatureLink">handRightConfidence</a> : int<div class="summaryTableDescription">
+		 This is the tracking confidence of the state of the right hand.</div></td><td class="summaryTableOwnerCol">KV2Body</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#handRightState" class="signatureLink">handRightState</a> : int<div class="summaryTableDescription">
+		 This is the tracked state of the right hand.</div></td><td class="summaryTableOwnerCol">KV2Body</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#joints" class="signatureLink">joints</a> : Vector.&lt;<a href="../../../com/tastenkunst/airkinectv2/KV2Joint.html">KV2Joint</a>&gt;<div class="summaryTableDescription">
+		 All 25 body joints.</div></td><td class="summaryTableOwnerCol">KV2Body</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#tracked" class="signatureLink">tracked</a> : Boolean<div class="summaryTableDescription">
+		 Every body, that gets recognized by the sensor
+		 will have tracked = true.</div></td><td class="summaryTableOwnerCol">KV2Body</td></tr></table></div><a name="constantSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Constants</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableConstant"><tr><th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#BODY_COUNT" class="signatureLink">BODY_COUNT</a> : int = 6<div class="summaryTableDescription">[static] 
+		 The Kinect sensor will track up to 6 bodies in parallel.</div></td><td class="summaryTableOwnerCol">KV2Body</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#HandState_Closed" class="signatureLink">HandState_Closed</a> : int = 3<div class="summaryTableDescription">[static] 
+		 The sensor could track the hand state (left or right)
+		 and found the hand is "closed".</div></td><td class="summaryTableOwnerCol">KV2Body</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#HandState_Lasso" class="signatureLink">HandState_Lasso</a> : int = 4<div class="summaryTableDescription">[static] 
+		 The sensor could track the hand state (left or right)
+		 and found the hand is making a "lasso" gesture.</div></td><td class="summaryTableOwnerCol">KV2Body</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#HandState_NotTracked" class="signatureLink">HandState_NotTracked</a> : int = 1<div class="summaryTableDescription">[static] 
+		 The sensor could not track the hand (left or right),
+		 thus the its tracking state is "not tracked".</div></td><td class="summaryTableOwnerCol">KV2Body</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#HandState_Open" class="signatureLink">HandState_Open</a> : int = 2<div class="summaryTableDescription">[static] 
+		 The sensor could track the hand state (left or right)
+		 and found the hand is "open".</div></td><td class="summaryTableOwnerCol">KV2Body</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#HandState_Unknown" class="signatureLink">HandState_Unknown</a> : int = 0<div class="summaryTableDescription">[static] 
+		 The sensor could not track state of the hand (left or right),
+		 thus the its tracking state is "unknown".</div></td><td class="summaryTableOwnerCol">KV2Body</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#TrackingConfidence_High" class="signatureLink">TrackingConfidence_High</a> : int = 1<div class="summaryTableDescription">[static] 
+		 The sensor could track the hand (left or right),
+		 and is pretty sure about the tracking results.</div></td><td class="summaryTableOwnerCol">KV2Body</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#TrackingConfidence_Low" class="signatureLink">TrackingConfidence_Low</a> : int = 0<div class="summaryTableDescription">[static] 
+		 The sensor could track the hand (left or right),
+		 but can't say with high confidence, that the tracking
+		 returned a certain result.</div></td><td class="summaryTableOwnerCol">KV2Body</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="color"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">color</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>public var color:uint</code><p></p><p></p><p>
+		 <p>This is the color of a certain body index.</p>
+		 
+		 <p>The default values are:</p>
+		 
+		 <ul>
+		 <li>0xFF00FF00</li>
+		 <li>0xFFFF0000</li>
+		 <li>0xFFFF4000</li>
+		 <li>0x40FFFF00</li>
+		 <li>0xFF40FF00</li>
+		 <li>0xFF808000</li>
+		 </ul>
+		 </p></div><a name="propertyDetail"></a><a name="gestureConfidence"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">gestureConfidence</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var gestureConfidence:Number</code><p></p><p></p><p>
+		 If a GestureType_Discrete was tracked this values will tell
+		 you, with which confidence it was tracked.
+		 </p></div><a name="propertyDetail"></a><a name="gestureProgress"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">gestureProgress</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var gestureProgress:Number</code><p></p><p></p><p>
+		 If a GestureType_Continuous was tracked this value will be
+		 between 0.0 and 1.0. This will always return a value, even
+		 if it's not wanted. So take GestureType_Discrete gestures
+		 as starting points for GestureType_Continuous gestures.
+		 </p></div><a name="propertyDetail"></a><a name="gestureTracked"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">gestureTracked</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var gestureTracked:Boolean</code><p></p><p></p><p>
+		 If a gesture database was added (GBD/GBA file), this
+		 values will state, whether a wanted gesture was tracked
+		 or not.
+		 </p></div><a name="propertyDetail"></a><a name="handLeftConfidence"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">handLeftConfidence</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var handLeftConfidence:int</code><p></p><p></p><p>
+		 This is the tracking confidence of the state of the left hand.
+		 </p></div><a name="propertyDetail"></a><a name="handLeftState"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">handLeftState</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var handLeftState:int</code><p></p><p></p><p>
+		 This is the tracked state of the left hand.
+		 </p></div><a name="propertyDetail"></a><a name="handRightConfidence"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">handRightConfidence</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var handRightConfidence:int</code><p></p><p></p><p>
+		 This is the tracking confidence of the state of the right hand.
+		 </p></div><a name="propertyDetail"></a><a name="handRightState"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">handRightState</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var handRightState:int</code><p></p><p></p><p>
+		 This is the tracked state of the right hand.
+		 </p></div><a name="propertyDetail"></a><a name="joints"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">joints</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var joints:Vector.&lt;<a href="../../../com/tastenkunst/airkinectv2/KV2Joint.html">KV2Joint</a>&gt;</code><p></p><p></p><p>
+		 All 25 body joints.
+		 
+		 </p><p><span class="label">See also</span></p><div class="seeAlso"><a href="KV2Joint.html" target="">KV2Joint</a></div></div><a name="propertyDetail"></a><a name="tracked"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">tracked</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var tracked:Boolean</code><p></p><p></p><p>
+		 Every body, that gets recognized by the sensor
+		 will have tracked = true. Inactive bodies (out
+		 of the 6 possible tracked ones) will have
+		 tracked = false.
+		 </p></div><div class="detailSectionHeader">Constant Detail</div><a name="constantDetail"></a><a name="BODY_COUNT"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">BODY_COUNT</td><td class="detailHeaderType">Constant</td></tr></table><div class="detailBody"><code>public static const BODY_COUNT:int = 6</code><p></p><p></p><p>
+		 The Kinect sensor will track up to 6 bodies in parallel.
+		 </p></div><a name="constantDetail"></a><a name="HandState_Closed"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">HandState_Closed</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const HandState_Closed:int = 3</code><p></p><p></p><p>
+		 The sensor could track the hand state (left or right)
+		 and found the hand is "closed".
+		 </p></div><a name="constantDetail"></a><a name="HandState_Lasso"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">HandState_Lasso</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const HandState_Lasso:int = 4</code><p></p><p></p><p>
+		 The sensor could track the hand state (left or right)
+		 and found the hand is making a "lasso" gesture.
+		 </p></div><a name="constantDetail"></a><a name="HandState_NotTracked"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">HandState_NotTracked</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const HandState_NotTracked:int = 1</code><p></p><p></p><p>
+		 The sensor could not track the hand (left or right),
+		 thus the its tracking state is "not tracked".
+		 </p></div><a name="constantDetail"></a><a name="HandState_Open"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">HandState_Open</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const HandState_Open:int = 2</code><p></p><p></p><p>
+		 The sensor could track the hand state (left or right)
+		 and found the hand is "open".
+		 </p></div><a name="constantDetail"></a><a name="HandState_Unknown"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">HandState_Unknown</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const HandState_Unknown:int = 0</code><p></p><p></p><p>
+		 The sensor could not track state of the hand (left or right),
+		 thus the its tracking state is "unknown".
+		 </p></div><a name="constantDetail"></a><a name="TrackingConfidence_High"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">TrackingConfidence_High</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const TrackingConfidence_High:int = 1</code><p></p><p></p><p>
+		 The sensor could track the hand (left or right),
+		 and is pretty sure about the tracking results.
+		 </p></div><a name="constantDetail"></a><a name="TrackingConfidence_Low"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">TrackingConfidence_Low</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const TrackingConfidence_Low:int = 0</code><p></p><p></p><p>
+		 The sensor could track the hand (left or right),
+		 but can't say with high confidence, that the tracking
+		 returned a certain result.
+		 </p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>AIRKinectv2 ANE v1.0.1 by Tastenkunst GmbH - www.tastenkunst.com - 2015</footer><br/>Freitag Apr 24 2015, 08:17 AM +02:00  </center></div></body></html><!--AIRKinectv2 ANE v1.0.1 by Tastenkunst GmbH - www.tastenkunst.com - 2015<br/>Freitag Apr 24 2015, 08:17 AM +02:00  -->

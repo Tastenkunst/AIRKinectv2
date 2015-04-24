@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.powerflasher.fdt.ui.MobileApplicationGroup">
+<stringAttribute key="ADL_DESCRIPTOR_FILE" value="bin/AIRKINECTV2_ANE_EXAMPLES-app.xml"/>
+<booleanAttribute key="ADVANCED_TELEMTRY" value="true"/>
+<intAttribute key="AIR_VIEWER_CONF" value="1"/>
+<stringAttribute key="APP_ARGUMENTS" value=""/>
+<stringAttribute key="ARGUMENTS" value="-static-link-runtime-shared-libraries=true&#10;-target-player={playerVersion}&#10;-library-path+=&quot;{flexSDK}/frameworks/locale/en_US&quot;&#10;-default-size=1280,720&#10;-strict=true&#10;-optimize=true&#10;-swf-version=28"/>
+<listAttribute key="COMPILER_CONSTANTS"/>
+<stringAttribute key="COMPILER_TECHNOLOGY" value="ASC"/>
+<booleanAttribute key="CREATE_APP_ROOT" value="false"/>
+<booleanAttribute key="CUSTOMIZE_ADL_ARGS" value="false"/>
+<stringAttribute key="CUSTOM_ADL_CMD_LINE" value="${nodebug} ${profile} ${screensize} ${anesdir} ${desc} ${rootdir} ${appargs}"/>
+<booleanAttribute key="DISABLE_COMPILE_PROCESS" value="false"/>
+<booleanAttribute key="FORCE_FRESH_COMPILATION" value="true"/>
+<stringAttribute key="LAUNCHER_DEPENDENCIES" value="[Self]"/>
+<intAttribute key="LAUNCH_METHOD" value="0"/>
+<stringAttribute key="MAIN_CLASS" value="src/App.as"/>
+<booleanAttribute key="PASS_CP" value="true"/>
+<booleanAttribute key="PASS_DEFINES" value="true"/>
+<booleanAttribute key="PASS_EXTERNS" value="false"/>
+<booleanAttribute key="PASS_MAIN_CLASS" value="true"/>
+<booleanAttribute key="PASS_RSLS" value="false"/>
+<booleanAttribute key="PASS_SWCS" value="true"/>
+<stringAttribute key="POST_COMPILE_ANT" value=""/>
+<stringAttribute key="PRE_COMPILE_ANT" value="build/clean_tmp.xml"/>
+<stringAttribute key="PROJECT_NAME" value="AIRKINECTV2_ANE_EXAMPLES"/>
+<booleanAttribute key="SAMPLER" value="false"/>
+<booleanAttribute key="START_DEBUGGER" value="true"/>
+<stringAttribute key="START_SWF_WITH" value="AIR Debug Launcher"/>
+<stringAttribute key="TARGET_PLATFORM" value="AirDesktop"/>
+<stringAttribute key="TARGET_PLATFORM_CONFIG" value="Primary"/>
+<booleanAttribute key="USE_PROJECT_COMPILER_ARGUMENTS" value="false"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/AIRKINECTV2_ANE_EXAMPLES"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+</launchConfiguration>

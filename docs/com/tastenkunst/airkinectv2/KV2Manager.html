@@ -1,0 +1,270 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../override.css" type="text/css"><meta name="keywords" content="KV2Manager,com.tastenkunst.airkinectv2.KV2Manager,BODY_COUNT,CONTEXT_UNAVAILABLE,FAIL,HandState_Closed,HandState_Lasso,HandState_NotTracked,HandState_Open,HandState_Unknown,JointType_AnkleLeft,JointType_AnkleRight,JointType_Count,JointType_ElbowLeft,JointType_ElbowRight,JointType_FootLeft,JointType_FootRight,JointType_HandLeft,JointType_HandRight,JointType_HandTipLeft,JointType_HandTipRight,JointType_Head,JointType_HipLeft,JointType_HipRight,JointType_KneeLeft,JointType_KneeRight,JointType_Neck,JointType_ShoulderLeft,JointType_ShoulderRight,JointType_SpineBase,JointType_SpineMid,JointType_SpineShoulder,JointType_ThumbLeft,JointType_ThumbRight,JointType_WristLeft,JointType_WristRight,LICENCE,OK,TrackingConfidence_High,TrackingConfidence_Low,TrackingState_Inferred,TrackingState_NotTracked,TrackingState_Tracked,VERSION,bodies,bodyIndexFrameBmd,bodyIndexFrameColors,bodyIndexFrameMappedToColorSpaceBmd,bodyIndexFrameMappingToColorSpaceUpdated,bodyIndexFrameUpdated,cameraSpacePoint,color,colorFrameBmd,colorFrameMappedToDepthSpaceBmd,colorFrameMappingToDepthSpaceUpdated,colorFrameUpdated,colorSpaceDimensions,colorSpacePoint,depthFrameBmd,depthFrameMappedToColorSpaceBmd,depthFrameMappingToColorSpaceUpdated,depthFrameUpdated,depthSpaceDimensions,depthSpacePoint,enableBodyFrame,enableBodyIndexFrame,enableBodyIndexFrameMappingToColorSpace,enableColorFrame,enableColorFrameMappingToDepthSpace,enableDepthFrame,enableDepthFrameMappingToColorSpace,enableInfraredFrame,enableInfraredFrameMappingToColorSpace,enableLongExposureInfraredFrame,enableLongExposureInfraredFrameMappingToColorSpace,enableVisualGestureBuilderFrame,gestureConfidence,gestureProgress,gestureTracked,handLeftConfidence,handLeftState,handRightConfidence,handRightState,infraredFrameBmd,infraredFrameMappedToColorSpaceBmd,infraredFrameMappingToColorSpaceUpdated,infraredFrameUpdated,jointType,joints,longExposureInfraredFrameBmd,longExposureInfraredFrameMappedToColorSpaceBmd,longExposureInfraredFrameMappingToColorSpaceUpdated,longExposureInfraredFrameUpdated,tracked,trackingState,start,stop,updateBodies,updateImages"><title>com.tastenkunst.airkinectv2.KV2Manager</title></head><body><script language="javascript" type="text/javascript" src="../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'KV2Manager - AIRKinectv2 ANE v1.0.1';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">AIRKinectv2 ANE v1.0.1</td><td class="titleTableTopNav" align="right"><a href="../../../package-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../class-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../all-index-A.html" onclick="loadClassListFrame('../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../index.html?com/tastenkunst/airkinectv2/KV2Manager.html&amp;com/tastenkunst/airkinectv2/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">KV2Manager</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("KV2Manager"); titleBar_setSubNav(true,true,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.tastenkunst.airkinectv2</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public final   class  KV2Manager</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">KV2Manager  <img src="../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> Object</td></tr></table><p></p><p></p><p></p>
+	 This class provides a small and simple API to the Kinect sensor.
+	 
+	 <p>It will take care of starting, stopping and updating the sensor
+	 and its data streams. Just use KV2Config to setup, which data 
+	 you actually want to retrieve from the sensor.</p>
+	 
+	              <p>The SDK comes with several examples, that will walk you
+	 through the setup and usage of this ANE.</p>
+	 
+	              <p>I hope you like it, any feedback is appreciated.
+	 If you have any feature request, just let me know and
+	 I will add it to the todo list.</p>
+	 
+	              <p>author: <a href="http://www.tastenkunst.com" target="external">Marcel Klammer, Tastenkunst GmbH, 2015</a>
+               </p>
+	 
+	              <p>And... please be fair and pay for your commercial projects. Thank you mates!</p>
+	           <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#bodies" class="signatureLink">bodies</a> : Vector.&lt;<a href="../../../com/tastenkunst/airkinectv2/KV2Body.html">KV2Body</a>&gt;<div class="summaryTableDescription">[read-only] 
+		 Returns a Vector of length KV2Body.BODY_COUNT of KV2Body objects.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#bodyIndexFrameBmd" class="signatureLink">bodyIndexFrameBmd</a> : BitmapData<div class="summaryTableDescription">[read-only] 
+		 Returns a BitmapData filled with pixel data of the body index frame
+		 with the size of the depthSpaceDimension rectangle.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#bodyIndexFrameMappedToColorSpaceBmd" class="signatureLink">bodyIndexFrameMappedToColorSpaceBmd</a> : BitmapData<div class="summaryTableDescription">[read-only] 
+		 Returns a BitmapData filled with pixel data of the body index frame
+		 with the size of the colorSpaceDimension rectangle.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#bodyIndexFrameMappingToColorSpaceUpdated" class="signatureLink">bodyIndexFrameMappingToColorSpaceUpdated</a> : int<div class="summaryTableDescription">[read-only] 
+		 Returns whether the body index frame to color space mapping
+		 was updated during the last update cycle.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#bodyIndexFrameUpdated" class="signatureLink">bodyIndexFrameUpdated</a> : int<div class="summaryTableDescription">[read-only] 
+		 Returns whether the body index frame 
+		 was updated during the last update cycle.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#colorFrameBmd" class="signatureLink">colorFrameBmd</a> : BitmapData<div class="summaryTableDescription">[read-only] 
+		 Returns a BitmapData filled with pixel data of the color frame
+		 with the size of the colorSpaceDimension rectangle.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#colorFrameMappedToDepthSpaceBmd" class="signatureLink">colorFrameMappedToDepthSpaceBmd</a> : BitmapData<div class="summaryTableDescription">[read-only] 
+		 Returns a BitmapData filled with pixel data of the color frame
+		 with the size of the depthSpaceDimension rectangle.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#colorFrameMappingToDepthSpaceUpdated" class="signatureLink">colorFrameMappingToDepthSpaceUpdated</a> : int<div class="summaryTableDescription">[read-only] 
+		 Returns whether the color frame to depth space mapping
+		 was updated during the last update cycle.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#colorFrameUpdated" class="signatureLink">colorFrameUpdated</a> : int<div class="summaryTableDescription">[read-only] 
+		 Returns whether the color frame 
+		 was updated during the last update cycle.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#colorSpaceDimensions" class="signatureLink">colorSpaceDimensions</a> : Rectangle<div class="summaryTableDescription">[read-only] 
+		 Returns the color space dimensions.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#depthFrameBmd" class="signatureLink">depthFrameBmd</a> : BitmapData<div class="summaryTableDescription">[read-only] 
+		 Returns a BitmapData filled with pixel data of the depth frame
+		 with the size of the depthSpaceDimension rectangle.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#depthFrameMappedToColorSpaceBmd" class="signatureLink">depthFrameMappedToColorSpaceBmd</a> : BitmapData<div class="summaryTableDescription">[read-only] 
+		 Returns a BitmapData filled with pixel data of the depth frame
+		 with the size of the colorSpaceDimension rectangle.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#depthFrameMappingToColorSpaceUpdated" class="signatureLink">depthFrameMappingToColorSpaceUpdated</a> : int<div class="summaryTableDescription">[read-only] 
+		 Returns whether the depth frame to color space mapping
+		 was updated during the last update cycle.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#depthFrameUpdated" class="signatureLink">depthFrameUpdated</a> : int<div class="summaryTableDescription">[read-only] 
+		 Returns whether the depth frame 
+		 was updated during the last update cycle.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#depthSpaceDimensions" class="signatureLink">depthSpaceDimensions</a> : Rectangle<div class="summaryTableDescription">[read-only] 
+		 Returns the depth space dimensions.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#infraredFrameBmd" class="signatureLink">infraredFrameBmd</a> : BitmapData<div class="summaryTableDescription">[read-only] 
+		 Returns a BitmapData filled with pixel data of the infrared frame
+		 with the size of the depthSpaceDimension rectangle.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#infraredFrameMappedToColorSpaceBmd" class="signatureLink">infraredFrameMappedToColorSpaceBmd</a> : BitmapData<div class="summaryTableDescription">[read-only] 
+		 Returns a BitmapData filled with pixel data of the infrared frame
+		 with the size of the colorSpaceDimension rectangle.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#infraredFrameMappingToColorSpaceUpdated" class="signatureLink">infraredFrameMappingToColorSpaceUpdated</a> : int<div class="summaryTableDescription">[read-only] 
+		 Returns whether the infrared frame to color space mapping
+		 was updated during the last update cycle.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#infraredFrameUpdated" class="signatureLink">infraredFrameUpdated</a> : int<div class="summaryTableDescription">[read-only] 
+		 Returns whether the infrared frame 
+		 was updated during the last update cycle.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#longExposureInfraredFrameBmd" class="signatureLink">longExposureInfraredFrameBmd</a> : BitmapData<div class="summaryTableDescription">[read-only] 
+		 Returns a BitmapData filled with pixel data of the long exposure infrared frame
+		 with the size of the depthSpaceDimension rectangle.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#longExposureInfraredFrameMappedToColorSpaceBmd" class="signatureLink">longExposureInfraredFrameMappedToColorSpaceBmd</a> : BitmapData<div class="summaryTableDescription">[read-only] 
+		 Returns a BitmapData filled with pixel data of the long exposure infrared frame
+		 with the size of the colorSpaceDimension rectangle.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#longExposureInfraredFrameMappingToColorSpaceUpdated" class="signatureLink">longExposureInfraredFrameMappingToColorSpaceUpdated</a> : int<div class="summaryTableDescription">[read-only] 
+		 Returns whether the long exposure infrared frame to color space mapping
+		 was updated during the last update cycle.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#longExposureInfraredFrameUpdated" class="signatureLink">longExposureInfraredFrameUpdated</a> : int<div class="summaryTableDescription">[read-only] 
+		 Returns whether the long exposure infrared frame 
+		 was updated during the last update cycle.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#KV2Manager()" class="signatureLink">KV2Manager</a>()</div><div class="summaryTableDescription">
+		 Initializes internal data structures.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#start()" class="signatureLink">start</a>(config:<a href="../../../com/tastenkunst/airkinectv2/KV2Config.html">KV2Config</a>):int</div><div class="summaryTableDescription">
+		 Starts the Kinect sensor and initializes the data
+		 streams according to your settings in KV2Config.
+		 
+		 If you change a setting in KVConfig, you need to
+		 call this method again to restart the Kinect sensor.
+		 
+		 A currently running instance of the Kinect sensor
+		 will be disposed by this call.
+		 
+		 </div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#stop()" class="signatureLink">stop</a>():int</div><div class="summaryTableDescription">
+		 Stops all data streams and the Kinect sensor.
+		 
+		 </div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#updateBodies()" class="signatureLink">updateBodies</a>():int</div><div class="summaryTableDescription">
+		 Updates the Kinect sensor body data:
+		 
+		 body frame
+		 visual gesture builder frame
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#updateImages()" class="signatureLink">updateImages</a>():int</div><div class="summaryTableDescription">
+		 Updates all Kinect sensor image data streams:
+		 
+		 
+		 color frame
+		 depth frame
+		 infrared frame
+		 long exposure infrared frame
+		 body index frame
+		 
+		 
+		 and all their mappings into other coordinate spaces:
+		 
+		 
+		 color to depth
+		 depth to color
+		 infrared to color
+		 long exposure infrared to color
+		 body index to color
+		 
+		 
+		 This method will always return OK.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr></table></div><a name="constantSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Constants</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableConstant"><tr><th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#LICENCE" class="signatureLink">LICENCE</a> : String = (KV2_ANE_TK230415 trial)<div class="summaryTableDescription">[static] 
+		 The license number with release date and type of license.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#VERSION" class="signatureLink">VERSION</a> : String = KV2 v1.0.1<div class="summaryTableDescription">[static] 
+		 The current version of this ANE.</div></td><td class="summaryTableOwnerCol">KV2Manager</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="bodies"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">bodies</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>bodies:Vector.&lt;<a href="../../../com/tastenkunst/airkinectv2/KV2Body.html">KV2Body</a>&gt;</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Returns a Vector of length KV2Body.BODY_COUNT of KV2Body objects.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get bodies():Vector.&lt;<a href="../../../com/tastenkunst/airkinectv2/KV2Body.html">KV2Body</a>&gt;</code><br/></div><a name="propertyDetail"></a><a name="bodyIndexFrameBmd"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">bodyIndexFrameBmd</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>bodyIndexFrameBmd:BitmapData</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Returns a BitmapData filled with pixel data of the body index frame
+		 with the size of the depthSpaceDimension rectangle.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get bodyIndexFrameBmd():BitmapData</code><br/></div><a name="propertyDetail"></a><a name="bodyIndexFrameMappedToColorSpaceBmd"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">bodyIndexFrameMappedToColorSpaceBmd</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>bodyIndexFrameMappedToColorSpaceBmd:BitmapData</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Returns a BitmapData filled with pixel data of the body index frame
+		 with the size of the colorSpaceDimension rectangle.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get bodyIndexFrameMappedToColorSpaceBmd():BitmapData</code><br/></div><a name="propertyDetail"></a><a name="bodyIndexFrameMappingToColorSpaceUpdated"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">bodyIndexFrameMappingToColorSpaceUpdated</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>bodyIndexFrameMappingToColorSpaceUpdated:int</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Returns whether the body index frame to color space mapping
+		 was updated during the last update cycle.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get bodyIndexFrameMappingToColorSpaceUpdated():int</code><br/></div><a name="propertyDetail"></a><a name="bodyIndexFrameUpdated"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">bodyIndexFrameUpdated</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>bodyIndexFrameUpdated:int</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Returns whether the body index frame 
+		 was updated during the last update cycle.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get bodyIndexFrameUpdated():int</code><br/></div><a name="propertyDetail"></a><a name="colorFrameBmd"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">colorFrameBmd</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>colorFrameBmd:BitmapData</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Returns a BitmapData filled with pixel data of the color frame
+		 with the size of the colorSpaceDimension rectangle.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get colorFrameBmd():BitmapData</code><br/></div><a name="propertyDetail"></a><a name="colorFrameMappedToDepthSpaceBmd"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">colorFrameMappedToDepthSpaceBmd</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>colorFrameMappedToDepthSpaceBmd:BitmapData</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Returns a BitmapData filled with pixel data of the color frame
+		 with the size of the depthSpaceDimension rectangle.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get colorFrameMappedToDepthSpaceBmd():BitmapData</code><br/></div><a name="propertyDetail"></a><a name="colorFrameMappingToDepthSpaceUpdated"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">colorFrameMappingToDepthSpaceUpdated</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>colorFrameMappingToDepthSpaceUpdated:int</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Returns whether the color frame to depth space mapping
+		 was updated during the last update cycle.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get colorFrameMappingToDepthSpaceUpdated():int</code><br/></div><a name="propertyDetail"></a><a name="colorFrameUpdated"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">colorFrameUpdated</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>colorFrameUpdated:int</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Returns whether the color frame 
+		 was updated during the last update cycle.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get colorFrameUpdated():int</code><br/></div><a name="propertyDetail"></a><a name="colorSpaceDimensions"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">colorSpaceDimensions</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>colorSpaceDimensions:Rectangle</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Returns the color space dimensions. At the time of writing this is
+		 full HD (1920x1080) for the colored camera stream.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get colorSpaceDimensions():Rectangle</code><br/></div><a name="propertyDetail"></a><a name="depthFrameBmd"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">depthFrameBmd</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>depthFrameBmd:BitmapData</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Returns a BitmapData filled with pixel data of the depth frame
+		 with the size of the depthSpaceDimension rectangle.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get depthFrameBmd():BitmapData</code><br/></div><a name="propertyDetail"></a><a name="depthFrameMappedToColorSpaceBmd"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">depthFrameMappedToColorSpaceBmd</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>depthFrameMappedToColorSpaceBmd:BitmapData</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Returns a BitmapData filled with pixel data of the depth frame
+		 with the size of the colorSpaceDimension rectangle.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get depthFrameMappedToColorSpaceBmd():BitmapData</code><br/></div><a name="propertyDetail"></a><a name="depthFrameMappingToColorSpaceUpdated"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">depthFrameMappingToColorSpaceUpdated</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>depthFrameMappingToColorSpaceUpdated:int</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Returns whether the depth frame to color space mapping
+		 was updated during the last update cycle.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get depthFrameMappingToColorSpaceUpdated():int</code><br/></div><a name="propertyDetail"></a><a name="depthFrameUpdated"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">depthFrameUpdated</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>depthFrameUpdated:int</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Returns whether the depth frame 
+		 was updated during the last update cycle.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get depthFrameUpdated():int</code><br/></div><a name="propertyDetail"></a><a name="depthSpaceDimensions"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">depthSpaceDimensions</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>depthSpaceDimensions:Rectangle</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Returns the depth space dimensions. At the time of writing this is
+		 full HD (512x424) for all other image data streams:
+		 depth, infrared, long exposure infrared, body index.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get depthSpaceDimensions():Rectangle</code><br/></div><a name="propertyDetail"></a><a name="infraredFrameBmd"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">infraredFrameBmd</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>infraredFrameBmd:BitmapData</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Returns a BitmapData filled with pixel data of the infrared frame
+		 with the size of the depthSpaceDimension rectangle.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get infraredFrameBmd():BitmapData</code><br/></div><a name="propertyDetail"></a><a name="infraredFrameMappedToColorSpaceBmd"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">infraredFrameMappedToColorSpaceBmd</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>infraredFrameMappedToColorSpaceBmd:BitmapData</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Returns a BitmapData filled with pixel data of the infrared frame
+		 with the size of the colorSpaceDimension rectangle.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get infraredFrameMappedToColorSpaceBmd():BitmapData</code><br/></div><a name="propertyDetail"></a><a name="infraredFrameMappingToColorSpaceUpdated"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">infraredFrameMappingToColorSpaceUpdated</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>infraredFrameMappingToColorSpaceUpdated:int</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Returns whether the infrared frame to color space mapping
+		 was updated during the last update cycle.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get infraredFrameMappingToColorSpaceUpdated():int</code><br/></div><a name="propertyDetail"></a><a name="infraredFrameUpdated"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">infraredFrameUpdated</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>infraredFrameUpdated:int</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Returns whether the infrared frame 
+		 was updated during the last update cycle.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get infraredFrameUpdated():int</code><br/></div><a name="propertyDetail"></a><a name="longExposureInfraredFrameBmd"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">longExposureInfraredFrameBmd</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>longExposureInfraredFrameBmd:BitmapData</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Returns a BitmapData filled with pixel data of the long exposure infrared frame
+		 with the size of the depthSpaceDimension rectangle.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get longExposureInfraredFrameBmd():BitmapData</code><br/></div><a name="propertyDetail"></a><a name="longExposureInfraredFrameMappedToColorSpaceBmd"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">longExposureInfraredFrameMappedToColorSpaceBmd</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>longExposureInfraredFrameMappedToColorSpaceBmd:BitmapData</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Returns a BitmapData filled with pixel data of the long exposure infrared frame
+		 with the size of the colorSpaceDimension rectangle.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get longExposureInfraredFrameMappedToColorSpaceBmd():BitmapData</code><br/></div><a name="propertyDetail"></a><a name="longExposureInfraredFrameMappingToColorSpaceUpdated"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">longExposureInfraredFrameMappingToColorSpaceUpdated</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>longExposureInfraredFrameMappingToColorSpaceUpdated:int</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Returns whether the long exposure infrared frame to color space mapping
+		 was updated during the last update cycle.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get longExposureInfraredFrameMappingToColorSpaceUpdated():int</code><br/></div><a name="propertyDetail"></a><a name="longExposureInfraredFrameUpdated"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">longExposureInfraredFrameUpdated</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>longExposureInfraredFrameUpdated:int</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Returns whether the long exposure infrared frame 
+		 was updated during the last update cycle.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get longExposureInfraredFrameUpdated():int</code><br/></div><a name="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><a name="KV2Manager()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">KV2Manager</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function KV2Manager()</code><p></p><p>
+		 Initializes internal data structures.
+		 </p></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="start()"></a><a name="start(com.tastenkunst.airkinectv2.KV2Config)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">start</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public final function start(config:<a href="../../../com/tastenkunst/airkinectv2/KV2Config.html">KV2Config</a>):int</code><p></p><p></p><p>
+		 <p>Starts the Kinect sensor and initializes the data
+		 streams according to your settings in KV2Config.</p>
+		 
+		 <p>If you change a setting in KVConfig, you need to
+		 call this method again to restart the Kinect sensor.</p>
+		 
+		 <p>A currently running instance of the Kinect sensor
+		 will be disposed by this call.</p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">config</span>:<a href="../../../com/tastenkunst/airkinectv2/KV2Config.html">KV2Config</a></code> &mdash; a KV2Config instance
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>int</code> &mdash; a KV2Code value (either OK, FAIL or CONTEXT_UNAVAILABLE)
+		 </td></tr></table></div><a name="stop()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">stop</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public final function stop():int</code><p></p><p></p><p>
+		 <p>Stops all data streams and the Kinect sensor.</p>
+		 
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>int</code> &mdash; a KV2Code value (either OK or CONTEXT_UNAVAILABLE)
+		 </td></tr></table></div><a name="updateBodies()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">updateBodies</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public final function updateBodies():int</code><p></p><p></p><p>
+		 <p>Updates the Kinect sensor body data:</p>
+		 <ul>
+		 <li>body frame</li>
+		 <li>visual gesture builder frame</li>
+		 </ul>
+		 
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>int</code> &mdash; a KV2Code value (either OK, FAIL or CONTEXT_UNAVAILABLE)
+		 </td></tr></table></div><a name="updateImages()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">updateImages</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public final function updateImages():int</code><p></p><p></p><p>
+		 <p>Updates all Kinect sensor image data streams:</p>
+		 
+		 <ul>
+		 <li>color frame</li>
+		 <li>depth frame</li>
+		 <li>infrared frame</li>
+		 <li>long exposure infrared frame</li>
+		 <li>body index frame</li>
+		 </ul>
+		 
+		 <p>and all their mappings into other coordinate spaces:</p>
+		 
+		 <ul>
+		 <li>color to depth</li>
+		 <li>depth to color</li>
+		 <li>infrared to color</li>
+		 <li>long exposure infrared to color</li>
+		 <li>body index to color</li>
+		 </ul>
+		 
+		 <p>This method will always return OK. You can check which
+		 data streams where successfully updated by retrieving 
+		 their xyzUpdated KV2Code values.</p>
+		 
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>int</code> &mdash; a KV2Code value (either OK or CONTEXT_UNAVAILABLE)
+		 </td></tr></table></div><div class="detailSectionHeader">Constant Detail</div><a name="constantDetail"></a><a name="LICENCE"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">LICENCE</td><td class="detailHeaderType">Constant</td></tr></table><div class="detailBody"><code>public static const LICENCE:String = (KV2_ANE_TK230415 trial)</code><p></p><p></p><p>
+		 The license number with release date and type of license.
+		 If you need a commercial license, just contact us via
+		 email or our contact form at <a href="http://www.tastenkunst.com/#/contact" target="external">http://www.tastenkunst.com/#/contact</a>
+		 </p></div><a name="constantDetail"></a><a name="VERSION"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">VERSION</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const VERSION:String = KV2 v1.0.1</code><p></p><p></p><p>
+		 The current version of this ANE.
+		 </p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>AIRKinectv2 ANE v1.0.1 by Tastenkunst GmbH - www.tastenkunst.com - 2015</footer><br/>Freitag Apr 24 2015, 08:17 AM +02:00  </center></div></body></html><!--AIRKinectv2 ANE v1.0.1 by Tastenkunst GmbH - www.tastenkunst.com - 2015<br/>Freitag Apr 24 2015, 08:17 AM +02:00  -->
