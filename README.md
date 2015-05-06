@@ -2,6 +2,10 @@
 
 ---
 
+**- Updated blog post for missing dlls - 06th May 2015: -** http://blog.tastenkunst.com/2015/04/24/released-airkinectv2-ane-v1-0-1/
+
+---
+
 **- what is it? -**
 			
 The AIRKinectv2 ANE is a wrapper for Microsoft's body tracking SDK "Kinect v2 for Windows".
