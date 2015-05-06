@@ -1,4 +1,4 @@
-AIRKinectv2 ANE v1.0.1 (short: KV2) - Readme
+AIRKinectv2 ANE v1.0.2 (short: KV2) - Readme
 
 			- what is it? -
 			
@@ -12,7 +12,7 @@ If you choose to use our software commercially, just contact us via:
 
 http://www.tastenkunst.com/#/contact
 
-Read the EULA carefully before using the SDKs. Once you decide to use KV2 commercially, 
+Read the EULA carefully before using the SDK. Once you decide to use KV2 commercially, 
 you will get a seperate license agreement, that you need to agree to.
 
 			- visit us online - 
@@ -39,6 +39,11 @@ Open the app "SDK Browser v2 (Kinect for Windows)" and run the first entry:
 If you pass all the tests and see the images (color and depth) at
 the very end of that app, you have installed the Kinect and the SDK properly.
 
+Find the download link for the ANE examples packed in the README.md on GitHub:
+(GitHub actually filters the following files from a commit without notice.
+So download the linked packed from that README.md)
+https://github.com/Tastenkunst/AIRKinectv2
+
 In the bin folder of this ANE package you will find two files and a folder:
 + Kinect20.VisualGestureBuilder.dll
 + Microsoft.Kinect.VisualGestureBuilder.dll
@@ -48,7 +53,7 @@ You need to package those file into your AIR App-Installer and thus deliver thos
 files via the installer. 
 
 !!! You will also need to put those 3 elements into PATH_TO_AIR_SDK_17_0_0/bin/
-Otherwise you won't be about to debug/try your app using adl.exe. !!!
+Otherwise you won't be able to debug/try your app using adl.exe. !!!
 If you try to run the examples and ask yourself, why it isn't working, it is 
 most likely the missing files in that damn PATH_TO_AIR_SDK_17_0_0/bin folder
 (hours wasted so far, after switching to a new AIR SDK version: at least 2).
@@ -78,9 +83,17 @@ What examples are included:
 + KV2ExampleDepthFrame		- Shows how to use KV2Config to get the wanted results.
 + KV2ExampleAll				- Let's you try all the things, that can be done with the ANE.
 + KV2ExampleWaterRipple		- A water effect example, that can be controlled using your hands.
++ KV2ExampleSwipeGesture	- A swipe gesture (left/right and up/down) tracking example.
 
 			- release notes -
 			
+v1.0.2 - 06.05.2015:
+
++ Added: KV2ExampleSwipeGesture for swiping left/right and up/down.
++ Fixed: KV2Body.color was set in wrong color channel order. Now Matches BodyIndexframe color as it should have been.
++ Fixed: KV2ExampleWaterRipple _showSilhouette=true did not show the silhouette.
+		 needed to add _kv2Config.enableDepthFrame = _showSilhouette;
+		 
 v1.0.1 - 23.04.2015:
 
 Release! We used this ANE in a couple of projects since we started developing it.

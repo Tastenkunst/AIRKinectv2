@@ -92,6 +92,20 @@ package com.tastenkunst.as3.utils {
 			g.endFill();
 		}
 
+		public static function drawPointWithOutline(g : Graphics, p : Point, radius : Number, 
+				clear : Boolean = false, 
+				fillColor : uint = 0x00f6ff, fillAlpha : Number = 1.0,
+				lineThickness : Number = 1.0, 
+				lineColor : uint = 0x000000, lineAlpha : Number = 1.0) : void {
+			clear && g.clear();
+			
+			g.beginFill(fillColor, fillAlpha);
+			g.lineStyle(lineThickness, lineColor, lineAlpha);
+			g.drawCircle(p.x, p.y, radius);
+			g.lineStyle();
+			g.endFill();
+		}
+
 		public static function drawPoints(g : Graphics, points : Vector.<Point>, radius : Number, 
 				clear : Boolean = false, 
 				fillColor : uint = 0x00f6ff, fillAlpha : Number = 1.0) : void {

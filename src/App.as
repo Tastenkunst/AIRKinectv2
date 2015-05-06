@@ -43,6 +43,7 @@ package {
 //			_example = new KV2ExampleDepthFrame();
 			_example = new KV2ExampleAll();
 //			_example = new KV2ExampleWaterRipple();
+//			_example = new KV2ExampleSwipeGesture();
 			
 			addChild(_example);
 			

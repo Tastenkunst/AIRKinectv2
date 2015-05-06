@@ -34,8 +34,8 @@ package com.tastenkunst.airkinectv2.examples {
 		public var _assets : WaterAssets;
 		
 		// Set these true to show either the silhouette or the body joints.
-		public var _showSilhouette : Boolean = false;
-		public var _showJoints : Boolean = false;
+		public var _showSilhouette : Boolean = true;
+		public var _showJoints : Boolean = true;
 		
 		public var _bmBodyIndexFrameMappedToColorSpace : Bitmap;
 		
@@ -76,6 +76,7 @@ package com.tastenkunst.airkinectv2.examples {
 		override public function init() : void {
 			trace("KV2ExampleWaterRipple.init");
 	
+			_kv2Config.enableDepthFrame = _showSilhouette;
 			_kv2Config.enableBodyFrame = true;
 			
 			_kv2Config.enableBodyIndexFrame = _showSilhouette;
